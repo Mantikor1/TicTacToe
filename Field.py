@@ -22,6 +22,10 @@ class Field:
             sign = font.render(self.__playerSign, True, "Black")
             self.__screen.blit(sign, (self.__posX+13, self.__posY+11))
 
+    def clear(self):
+        self.__clicked = False
+        self.__playerSign = ""
+        
     # Set the player sign and mark the field as "clicked"
     def setClicked(self, playerSign):
         self.__clicked = True

@@ -39,3 +39,9 @@ class Grid:
     # Update the player count
     def updatePlayerCount(self):
         self.__playerCount += 1
+
+    def clear(self):
+        self.__playerCount = 0
+        for row in range(3):
+            for column in range(3):
+                self.__fields[row][column].clear()
